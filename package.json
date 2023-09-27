@@ -6,7 +6,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles --runInBand"
+  },
+  "jest": {
+    "maxConcurrency": 1
   },
   "keywords": [],
   "author": "",

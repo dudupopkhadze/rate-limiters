@@ -1,5 +1,5 @@
 import app from "./src/app.js";
-
+import { refillTokensInterval } from "./src/limiters/token-bucket.js";
 const port = 3000;
 
 const server = app.listen(port, () => {
@@ -7,6 +7,7 @@ const server = app.listen(port, () => {
 });
 
 const gracefulShutdown = () => {
+  clearInterval(refillTokensInterval);
   console.log("\nShutting down gracefully...");
   server.close(() => {
     console.log("Closed out remaining connections.");
