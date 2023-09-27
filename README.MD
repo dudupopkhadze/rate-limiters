@@ -1,3 +1,5 @@
-# Token Bucket Algorithm Rate Limiter
+# Rate Limit Everything and Everyone
 
-Rate limiter for NodeJS + ExpressJS implemented with Token Bucket algo.
+Rate limiters for NodeJS + ExpressJS
+
+-[ ] Token Bucket
