@@ -1,17 +1,6 @@
-import express from "express";
+import app from "./src/app.js";
 
-const app = express();
 const port = 3000;
-
-app.get("/limited", (req, res) => {
-  // Your limited route logic
-  res.send("Limited Access");
-});
-
-app.get("/unlimited", (req, res) => {
-  // Your unlimited route logic
-  res.send("Unlimited Access");
-});
 
 const server = app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
