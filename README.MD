@@ -14,6 +14,6 @@ Challenge: https://codingchallenges.fyi/challenges/challenge-rate-limiter/
 
 ---
 
-`npm start` - for starting server
-`npm test` - for running tests
-`npm test file_name` - for running specific test
+- `npm start` - for starting server
+- `npm test` - for running tests
+- `npm test file_name` - for running specific test
