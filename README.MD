@@ -4,4 +4,5 @@ Rate limiters for NodeJS + ExpressJS
 
 Challenge: https://codingchallenges.fyi/challenges/challenge-rate-limiter/
 
-- [ ] Token Bucket
+- [x] Token Bucket
+- [x] Fixed Window Counter
