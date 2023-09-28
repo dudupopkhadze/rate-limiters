@@ -9,3 +9,5 @@ Challenge: https://codingchallenges.fyi/challenges/challenge-rate-limiter/
 - [x] Sliding Window Log
 - [x] Sliding Window Counter
 - [x] Sliding Window Counter with Redis
+
+## _Disclaimer_: none of these limiters are production ready.
