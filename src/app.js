@@ -1,6 +1,7 @@
 import express from "express";
 import { tokenBucketRateLimiterMiddleware } from "./limiters/token-bucket.js";
 import { fixedWindowCounterMiddleware } from "./limiters/fixed-window-counter.js";
+import { slidingWindowLogsMiddleware } from "./limiters/sliding-window-log.js";
 
 const app = express();
 
@@ -17,6 +18,12 @@ app.get("/limitedtb", tokenBucketRateLimiterMiddleware, (req, res) => {
 
 // limited with fixed window counter
 app.get("/limitedfwc", fixedWindowCounterMiddleware, (req, res) => {
+  // Your limited route logic
+  res.send("Limited Access");
+});
+
+// limited with sliding window log
+app.get("/limitedswl", slidingWindowLogsMiddleware, (req, res) => {
   // Your limited route logic
   res.send("Limited Access");
 });
